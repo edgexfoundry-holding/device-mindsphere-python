@@ -15,15 +15,20 @@ device-mindsphere-python is a library which provides the way to connect to MindS
   - [How to install](https://docs.docker.com/compose/install/)
 
 ## How to create docker image ##
-1. docker build -t mindsphere-connector-service . 
+```
+docker build -t mindsphere-connector-service . 
+```
 
 ## How to tag ##
-2. docker tag mindsphere-connector-service edgexfoundry/mindsphere-connector-service:1.0
- 
+```
+docker tag mindsphere-connector-service edgexfoundry/mindsphere-connector-service:1.0
+``` 
 ## How to run ##
 Download docker-compose.yml from Docker folder and run below command
+```
 1.docker-compose pull
 2.docker-compose up -d
+```
 
 ## Configuring to export data using HTTP protocol ##
 URL : http://edgex-mindsphere-connector:8107/config/rest, Method : PUT
