@@ -27,6 +27,7 @@ Download docker-compose.yml from Docker folder and run below command
 
 ## Configuring to export data using HTTP protocol ##
 URL : http://edgex-mindsphere-connector:8107/config/rest, Method : PUT
+```
 BODY: {“RestConfigValues”: [{
   "name": "MindSphereREST",
   "addressable": {
@@ -50,10 +51,11 @@ BODY: {“RestConfigValues”: [{
   "enable": true,
   "destination": "REST_ENDPOINT"
 }]}
-
+```
 
 ## Configuring to export data using MQTT protocol  ##
 URL : http://edgex-mindsphere-connector:8107/config/mqtt, Method : PUT
+```
 BODY: {“RestConfigValues”: [{
     "name":"MindSphereMQTT ",
     "addressable":{
@@ -74,3 +76,4 @@ BODY: {“RestConfigValues”: [{
     "enable":true,
     "destination":"MQTT_TOPIC"
 } ]}
+```
