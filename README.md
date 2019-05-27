@@ -14,7 +14,7 @@ device-mindsphere-python is a library which provides the way to connect to MindS
   - [Where to download](https://docs.docker.com/compose/)
   - [How to install](https://docs.docker.com/compose/install/)
 
-## How to create docker image##
+## How to create docker image ##
 1. docker build -t mindsphere-connector-service . 
 
 ## How to tag ##
