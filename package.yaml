@@ -1,0 +1,24 @@
+descriptor-schema-version: "2.2"
+
+info:
+  name: Mindsphere Device Connector Service
+  description: "Sending Real time Rpm, Temperature, Current and Vibration to Mindsphere"
+  version: "1.0"
+  author-link: "http://www.wipro.com"
+  author-name: "Wipro Ltd."
+
+app:
+  cpuarch: "x86_64"
+  type: docker
+  resources:
+    profile: c1.small
+    network:
+      -
+        interface-name: eth0
+        ports:
+          tcp:
+            - 8105
+
+  startup:
+    rootfs: rootfs.tar
+    target: ["python3 mindsphere_device_connector_1_0.py"]
